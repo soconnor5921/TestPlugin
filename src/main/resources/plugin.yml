@@ -1,0 +1,33 @@
+name: TestPlugin
+version: 1.14.2
+load: STARTUP
+main: io.github.soconnor5921.testplugin.Test
+
+commands:
+  starthas:
+    description: Starts a new game of hide and seek
+    usage: /starthideandseek [HIDER NAME] [SEEKER NAME]
+    permission: admin
+
+  diamonds:
+    description: Give yourself diamonds
+    usage: /diamonds
+
+  kit:
+    description: Test of kit
+    usage: /kit
+
+  sethider:
+    description: Set a player to be the Hider
+    usage: /sethider [PLAYER NAME]
+    permission: admin
+
+  setseeker:
+    description: Set a player to be the Seeker
+    usage: /setseeker [PLAYER NAME]
+    permission: admin
+
+permissions:
+  admin:
+    description: Gives you administrative privelages
+    default: true
